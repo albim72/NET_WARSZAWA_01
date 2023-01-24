@@ -13,6 +13,11 @@ namespace Budowniczy
         {
             set { _builder = value; }
         }
+
+        public void BuiltMinimalProduct()
+        {
+            this._builder.BuiltPartA();
+        }
         public void BuiltFullFeatureProduct()
         {
             this._builder.BuiltPartA();
