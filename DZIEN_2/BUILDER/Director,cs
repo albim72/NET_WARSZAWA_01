@@ -1,0 +1,23 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Budowniczy
+{
+    public class Director
+    {
+        private IBuilder _builder;
+        public IBuilder Builder
+        {
+            set { _builder = value; }
+        }
+        public void BuiltFullFeatureProduct()
+        {
+            this._builder.BuiltPartA();
+            this._builder.BuiltPartB();
+            this._builder.BuiltPartC();
+        }
+    }
+}
